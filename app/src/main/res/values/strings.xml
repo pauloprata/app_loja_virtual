@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Loja virtual</string>
+    <string name="title_categorias_populares">Categorias Populares</string>
+    <string name="title_produtos_recentes">Produtos Recentes</string>
+    <string name="title_activity_product_detail">ProductDetailActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="text_descricao">Descrição</string>
+    <string name="button_detail_comprar">Comprar</string>
+    <string name="menu_home">Home</string>
+    <string name="drawer_minha_conta">Minha Conta</string>
+    <string name="drawer_categoria">Categoria</string>
+    <string name="drawer_minhas_compras">Minhas Compras</string>
+    <string name="drawer_meu_carrinho">Meu Carrinho</string>
+    <string name="drawer_sair">Sair</string>
+</resources>
