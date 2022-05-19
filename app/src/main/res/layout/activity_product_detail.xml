@@ -1,10 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+     android:layout_height="match_parent">
+
+<com.google.android.material.appbar.AppBarLayout
+    android:id="@+id/bar_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <include layout="@layout/menu_toolbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"/>
+
+
+</com.google.android.material.appbar.AppBarLayout>
+
+<androidx.core.widget.NestedScrollView
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_below="@+id/bar_layout"
     tools:context=".ProductDetailActivity">
 
     <LinearLayout
@@ -19,13 +36,6 @@
             android:scaleType="centerCrop"
             android:src="@drawable/camiseta" />
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="8dp"
-            android:layout_marginTop="8dp"
-            android:text="Titulo do Produto"
-            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium" />
 
         <TextView
             android:layout_width="match_parent"
@@ -33,7 +43,68 @@
             android:layout_marginLeft="8dp"
             android:layout_marginTop="8dp"
             android:text="R$ 90,00"
-            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small" />
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:text="Cor"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium" />
+
+
+   <com.google.android.material.chip.ChipGroup
+       android:layout_marginLeft="8dp"
+       android:layout_marginTop="8dp"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+
+       <com.google.android.material.chip.Chip
+           style="@style/Widget.MaterialComponents.Chip.Choice"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Branco"
+           android:checkable="true"/>
+       <com.google.android.material.chip.Chip
+           style="@style/Widget.MaterialComponents.Chip.Choice"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Preto"
+           android:checkable="true"/>
+
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginLeft="8dp"
+           android:layout_marginTop="8dp"
+           android:text="Tamanho"
+           android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium" />
+
+   </com.google.android.material.chip.ChipGroup>
+
+        <com.google.android.material.chip.ChipGroup
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.chip.Chip
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="P"
+                android:checkable="true"/>
+            <com.google.android.material.chip.Chip
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="M"
+                android:checkable="true"/>
+
+
+        </com.google.android.material.chip.ChipGroup>
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btn_comprar"
@@ -68,4 +139,5 @@
     </LinearLayout>
 
 
-</ScrollView>
+</androidx.core.widget.NestedScrollView>
+</RelativeLayout>
