@@ -21,4 +21,41 @@
     <string name="drawer_sair">Sair</string>
     <string name="toggle_open">Open</string>
     <string name="toggle_close">Close</string>
+    <string name="user_cadastrar">Cadastrar</string>
+    <string name="txt_senha">Senha</string>
+    <string name="txt_use_email">Email</string>
+    <string name="txt_use_nome">Nome</string>
+    <string name="user_perfil">Perfil</string>
+    <string name="user_login_entrar">Entrar</string>
+
+    <!--Perfil do Usuario-->
+    <string-array name="states">
+
+        <item>Acre (AC)</item>
+        <item>Alagoas (AL)</item>
+        <item>Amapá (AP)</item>
+        <item>Amazonas (Am)</item>
+        <item>Bahia (BA)</item>
+        <item>Ceara (CE)</item>
+        <item>Distrito Federal (DF)</item>
+        <item>Espírito Santo (ES)</item>
+        <item>Goiás (GO)</item>
+        <item>Maranhão (MA)</item>
+        <item>Acre (AC)</item>
+        <item>Acre (AC)</item>
+        <item>Acre (AC)</item>
+        <item>Acre (AC)</item>
+        <item>Acre (AC)</item>
+        <item>Acre (AC)</item>
+        <item>Acre (AC)</item>
+        <item>Acre (AC)</item>
+        <item>Acre (AC)</item>
+        <item>Acre (AC)</item>
+        <item>Acre (AC)</item>
+        <item>Acre (AC)</item>
+        <item>Acre (AC)</item>
+
+    </string-array>
+
+
 </resources>

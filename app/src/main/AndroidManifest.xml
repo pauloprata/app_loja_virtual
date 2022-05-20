@@ -10,10 +10,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.LojaVirtual">
         <activity
+            android:name=".UserProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".UserLoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".UserRigesterActivity"
+            android:exported="false" />
+        <activity
             android:name=".ProductDetailActivity"
             android:exported="false"
-            android:label="@string/title_activity_product_detail"
-             />
+            android:label="@string/title_activity_product_detail" />
         <activity
             android:name=".SplashActivity"
             android:exported="true">

@@ -20,6 +20,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
     lateinit var drawlerLayout: DrawerLayout
     lateinit var  navigationView: NavigationView
     lateinit var textTitle: TextView
+    lateinit var textLogin: TextView
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -49,6 +50,12 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
           val intent: Intent = Intent(this, ProductDetailActivity::class.java)
           startActivity(intent)
       }
+        textLogin =navigationView.getHeaderView(0). findViewById(R.id.header_prof_name)
+        textLogin.setOnClickListener {
+            val intent = Intent(this, UserLoginActivity::class.java)
+            startActivity(intent)
+
+        }
     }
 
     override fun onBackPressed() {
@@ -64,7 +71,11 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
                 val intent = Intent(this, MainActivity::class.java)
                 startActivity(intent)
             }
-            R.id.nav_account -> Toast.makeText(this, "Conta", Toast.LENGTH_LONG).show()
+            R.id.nav_account -> {
+                val intent = Intent(this, UserProfileActivity::class.java)
+                startActivity(intent)
+
+            }
             R.id.nav_category -> Toast.makeText(this, "Categoria", Toast.LENGTH_LONG).show()
             R.id.nav_order -> Toast.makeText(this, "Ordem", Toast.LENGTH_LONG).show()
             R.id.nav_cart -> Toast.makeText(this, "Carrinho", Toast.LENGTH_LONG).show()

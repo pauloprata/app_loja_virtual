@@ -8,7 +8,11 @@
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.17" />
         <entry key="app/src/main/res/layout/activity_product_detail.xml" value="0.22" />
         <entry key="app/src/main/res/layout/activity_splash.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_user_login.xml" value="0.22" />
+        <entry key="app/src/main/res/layout/activity_user_profile.xml" value="0.22" />
+        <entry key="app/src/main/res/layout/activity_user_rigester.xml" value="0.23938223938223938" />
         <entry key="app/src/main/res/layout/fragment_first.xml" value="0.17760416666666667" />
+        <entry key="app/src/main/res/layout/item_product_category.xml" value="0.17760416666666667" />
         <entry key="app/src/main/res/layout/menu_header.xml" value="0.25" />
         <entry key="app/src/main/res/layout/menu_toolbar_layout.xml" value="0.33" />
         <entry key="app/src/main/res/layout/navigation_menu.xml" value="0.2" />
