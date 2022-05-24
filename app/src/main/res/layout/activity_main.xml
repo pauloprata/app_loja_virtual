@@ -85,14 +85,21 @@
                  android:id="@+id/all_catgory"
                  android:layout_width="match_parent"
                  android:layout_height="0dp"
-                 android:layout_weight="2"
+                 android:layout_weight="1"
                  android:layout_marginLeft="8dp"
+                 android:orientation="vertical"
                  android:layout_marginTop="8dp">
                  <TextView
                      android:layout_width="match_parent"
                      android:layout_height="wrap_content"
                      android:text="@string/title_categorias_populares"
                      android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium"/>
+
+                 <androidx.recyclerview.widget.RecyclerView
+                     android:id="@+id/main_product_category"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"/>
+
              </LinearLayout>
 
              <LinearLayout
@@ -102,33 +109,17 @@
                  android:orientation="vertical"
                  android:layout_weight="2"
                  android:layout_marginLeft="8dp"
-                 android:layout_marginTop="8dp">
+                 android:layout_marginTop="0dp">
                  <TextView
                      android:layout_width="match_parent"
                      android:layout_height="wrap_content"
                      android:text="@string/title_produtos_recentes"
                      android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium"/>
 
-                 <LinearLayout
-                     android:id="@+id/all_product_item"
-                     android:layout_width="wrap_content"
-                     android:layout_height="wrap_content"
-                     android:orientation="vertical"
-                     android:layout_marginRight="8dp"
-                     android:gravity="center">
-
-                     <ImageView
-                         android:layout_width="wrap_content"
-                         android:layout_height="wrap_content"
-                         android:src="@drawable/camiseta"/>
-
-                     <TextView
-                         android:layout_width="wrap_content"
-                         android:layout_height="wrap_content"
-                         android:text="Camiseta XYL"
-                         android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small"/>
-
-                 </LinearLayout>
+           <androidx.recyclerview.widget.RecyclerView
+               android:id="@+id/iv_product"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"/>
 
              </LinearLayout>
          </LinearLayout>

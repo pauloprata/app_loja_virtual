@@ -32,81 +32,55 @@
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="320dp"
-            android:adjustViewBounds="true"
             android:scaleType="centerCrop"
-            android:src="@drawable/camiseta" />
-
+            android:src="@drawable/camiseta"
+            android:adjustViewBounds="true"/>
 
         <TextView
+            android:id="@+id/tv_product_price"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="8dp"
             android:layout_marginTop="8dp"
-            android:text="R$ 90,00"
             android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="8dp"
+            android:layout_marginLeft="15dp"
             android:layout_marginTop="8dp"
+            android:textStyle="bold"
             android:text="Cor"
             android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium" />
-
-
    <com.google.android.material.chip.ChipGroup
+       android:id="@+id/ch_group_color"
        android:layout_marginLeft="8dp"
        android:layout_marginTop="8dp"
        android:layout_width="match_parent"
-       android:layout_height="wrap_content">
-
-       <com.google.android.material.chip.Chip
-           style="@style/Widget.MaterialComponents.Chip.Choice"
-           android:layout_width="wrap_content"
-           android:layout_height="wrap_content"
-           android:text="Branco"
-           android:checkable="true"/>
-       <com.google.android.material.chip.Chip
-           style="@style/Widget.MaterialComponents.Chip.Choice"
-           android:layout_width="wrap_content"
-           android:layout_height="wrap_content"
-           android:text="Preto"
-           android:checkable="true"/>
-
-       <TextView
-           android:layout_width="match_parent"
-           android:layout_height="wrap_content"
-           android:layout_marginLeft="8dp"
-           android:layout_marginTop="8dp"
-           android:text="Tamanho"
-           android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium" />
+       android:layout_height="wrap_content"
+       app:singleSelection="true">
 
    </com.google.android.material.chip.ChipGroup>
-
-        <com.google.android.material.chip.ChipGroup
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:layout_marginLeft="8dp"
             android:layout_marginTop="8dp"
+            android:textStyle="bold"
+            android:text="Tamanho"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium" />
 
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/ch_group_size"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <com.google.android.material.chip.Chip
-                style="@style/Widget.MaterialComponents.Chip.Choice"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="P"
-                android:checkable="true"/>
-            <com.google.android.material.chip.Chip
-                style="@style/Widget.MaterialComponents.Chip.Choice"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="M"
-                android:checkable="true"/>
-
+            android:layout_height="wrap_content"
+            app:singleSelection="true">
 
         </com.google.android.material.chip.ChipGroup>
 
-        <androidx.appcompat.widget.AppCompatButton
+        <Button
             android:id="@+id/btn_comprar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -124,15 +98,17 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="8dp"
             android:layout_marginTop="8dp"
-            android:text="@string/text_descricao"
+            android:textStyle="bold"
+            android:text="Descrição"
             android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium" />
 
         <TextView
+            android:id="@+id/tv_product_desc"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="8dp"
             android:layout_marginTop="8dp"
-            android:text="dfgdddddddddddddddddddddddddddddddfdddfgdddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd"
+            android:textStyle="bold"
             android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small" />
 
 

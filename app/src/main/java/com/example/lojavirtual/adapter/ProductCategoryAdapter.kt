@@ -7,12 +7,14 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.appcompat.view.menu.ActionMenuItemView
+import androidx.cardview.widget.CardView
 import androidx.recyclerview.widget.RecyclerView
+import com.example.lojavirtual.ProductCategoryFragment
 import com.example.lojavirtual.R
 import com.example.lojavirtual.adapter.ProductCategoryAdapter.*
 import com.example.lojavirtual.model.ProductCategory
 
-class ProductCategoryAdapter(var list :List<ProductCategory>, var context: Context) : RecyclerView.Adapter<ViewHolder>() {
+class ProductCategoryAdapter(val list :List<ProductCategory>, val context: Context) : RecyclerView.Adapter<ViewHolder>() {
 
 
 
@@ -24,6 +26,9 @@ class ProductCategoryAdapter(var list :List<ProductCategory>, var context: Conte
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val category: ProductCategory = list[position]
         holder.title.text = category.title
+        holder.cardview.setOnClickListener {
+            (context as ProductCategoryFragment.Callback).itemSelected(category)
+        }
     }
 
     override fun getItemCount(): Int = list.size
@@ -31,6 +36,7 @@ class ProductCategoryAdapter(var list :List<ProductCategory>, var context: Conte
     class  ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView){
         val icon : ImageView = itemView.findViewById(R.id.iv_category)
         val title : TextView = itemView.findViewById(R.id.tv_category_title)
+        val cardview: CardView = itemView.findViewById(R.id.cv_product_category)
     }
 
 }
