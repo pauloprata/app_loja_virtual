@@ -2,4 +2,4 @@ package com.example.lojavirtual.model
 
 import java.io.Serializable
 
-data class OrderedProduct(val id: String, val product: Product, val quality: Int): Serializable
+data class OrderedProduct(var id: String, var product: Product, var quantity: Int): Serializable

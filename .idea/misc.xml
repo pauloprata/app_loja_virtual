@@ -7,6 +7,7 @@
         <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.126" />
         <entry key="app/src/main/res/layout-sw600dp/activity_product_category.xml" value="0.133203125" />
         <entry key="app/src/main/res/layout/activiti_product.xml" value="0.17760416666666667" />
+        <entry key="app/src/main/res/layout/activity_cart.xml" value="0.328125" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.21" />
         <entry key="app/src/main/res/layout/activity_product.xml" value="0.17760416666666667" />
         <entry key="app/src/main/res/layout/activity_product_category.xml" value="0.17760416666666667" />
@@ -16,9 +17,11 @@
         <entry key="app/src/main/res/layout/activity_user_login.xml" value="0.22" />
         <entry key="app/src/main/res/layout/activity_user_profile.xml" value="0.22" />
         <entry key="app/src/main/res/layout/activity_user_rigester.xml" value="0.23938223938223938" />
+        <entry key="app/src/main/res/layout/fragment_cart.xml" value="0.17760416666666667" />
         <entry key="app/src/main/res/layout/fragment_first.xml" value="0.17760416666666667" />
         <entry key="app/src/main/res/layout/fragment_product.xml" value="1.2178571428571427" />
         <entry key="app/src/main/res/layout/fragment_product_category.xml" value="0.17760416666666667" />
+        <entry key="app/src/main/res/layout/item_cart.xml" value="0.33" />
         <entry key="app/src/main/res/layout/item_product.xml" value="0.18" />
         <entry key="app/src/main/res/layout/item_product_category.xml" value="0.17760416666666667" />
         <entry key="app/src/main/res/layout/menu_header.xml" value="0.25" />
@@ -26,6 +29,7 @@
         <entry key="app/src/main/res/layout/navigation_menu.xml" value="0.2" />
         <entry key="app/src/main/res/menu/menu_drawer.xml" value="0.2" />
         <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.126" />
+        <entry key="app/src/main/res/xml/file_paths.xml" value="0.17760416666666667" />
       </map>
     </option>
   </component>

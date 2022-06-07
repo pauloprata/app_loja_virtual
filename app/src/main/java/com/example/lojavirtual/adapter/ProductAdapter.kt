@@ -11,9 +11,10 @@ import androidx.cardview.widget.CardView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.lojavirtual.ProductDetailActivity
 import com.example.lojavirtual.R
+import com.example.lojavirtual.model.OrderedProduct
 import com.example.lojavirtual.model.Product
 
-class ProductAdapter (val list: List<Product>, val context: Context) : RecyclerView.Adapter<ProductAdapter.ViewHolder>(){
+class ProductAdapter(val list: List<Product>, val context: Context) : RecyclerView.Adapter<ProductAdapter.ViewHolder>(){
 
     class ViewHolder(itemView: View): RecyclerView.ViewHolder(itemView) {
         val imageView : ImageView = itemView.findViewById(R.id.iv_product_image)

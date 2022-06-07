@@ -9,5 +9,5 @@ data class Order(
     val method: String,
     val user: User,
     val products: MutableList<OrderedProduct> = emptyList<OrderedProduct>().toMutableList(),
-    val price: Double = products.sumByDouble { it.quality * it.product.price }
+    val price: Double = products.sumByDouble { it.quantity * it.product.price }
 ): Serializable

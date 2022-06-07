@@ -8,7 +8,6 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.lojavirtual.adapter.ProductAdapter
-import com.example.lojavirtual.adapter.ProductCategoryAdapter
 import com.example.lojavirtual.model.Product
 import com.example.lojavirtual.model.ProductCategory
 
